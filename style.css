@@ -1,0 +1,67 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #cdcdcd; }
+
+.oszlop {
+  display: flex;
+  width: 950px;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+header {
+  justify-content: center;
+  display: flex;
+  height: 188px;
+  background: #1c1c1c; }
+
+.logo {
+  font-family: Myriad Pro;
+  font-size: 60px;
+  color: white;
+  padding-top: 84px;
+  padding-bottom: 0px; }
+
+.logoalso {
+  font-size: 16px;
+  font-family: arial;
+  padding-bottom: 38px;
+  color: white; }
+
+.push {
+  margin-left: auto;
+  padding-top: 53px; }
+
+input.searchbox {
+  background-color: transparent;
+  height: 30px;
+  width: 235px;
+  border: 1px solid #2c2c2c;
+  font-size: 11px;
+  font-family: arial;
+  padding-left: 7px; }
+
+button.go {
+  height: 30px;
+  width: 48px;
+  font-weight: bold;
+  background-color: #3e3e3e;
+  border: none;
+  border-radius: 10px;
+  color: white; }
+
+.cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 596px;
+  background: #000f30;
+  background-image: url(./img/cover.png);
+  background-position: center;
+  background-size: cover; }
+
+footer {
+  height: 184px;
+  background: #2a2a2a; }
+
+/*# sourceMappingURL=style.css.map */
