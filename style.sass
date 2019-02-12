@@ -1,38 +1,48 @@
-$color3e: #3e3e3e
+$colbody: #cdcdcd
+$colfooter: #2b2b2b 
+$colcovergb: #000f30
+$colheader: #1c1c1c
+$colabcdbg: #f4f4f4
+$colabcdbgh: #222222
+$colabcdbutt: #5596ba
+$colabcdbutth: #f5f5f5
+$colparghbg: rgba(179, 179, 179 , 0.9)
 
+$Yellowtail:	'Yellowtail'
+$Combo: 		'Cambo'
+$Open:			'Open Sans'
 
-$Yellowtail:	'Yellowtail', cursive
-$Combo: 		'Cambo', serif
-
-body 
+p 
+	margin-block-start: 0px
+	margin-block-end: 0px
+body
 	margin: 0px
 	padding: 0px
-	background: #cdcdcd
-
-.oszlop
-	display: flex
-	width: 950px
-	justify-content: center
-	flex-wrap: wrap
+	background-color: $colbody
 header
-	justify-content: center
+	min-height: 10rem
+	background-color: $colheader
+	color: white
 	display: flex
-	height: 188px
-	background: #1c1c1c
-.logo
-	font-family: Myriad Pro
-	font-size: 60px
-	color: white
-	padding-top: 84px
-	padding-bottom: 0px
-.logoalso
-	font-size: 16px 
-	font-family: arial
-	padding-bottom: 38px
-	color: white
+	flex-flow: wrap
+div.left
+	align-self: flex-end
+div.right
+	align-self: flex-start
+	padding-top: 53px
+	display: inline-block
 .push
 	margin-left: auto
-	padding-top: 53px
+p.logo
+	padding: 0px
+	margin: 0px
+	font-family: $Combo
+	font-size: 60px
+p.logobutton
+	font-family: arial
+	font-size: 16px
+
+	padding-bottom: 38px
 input.searchbox
 	background-color: transparent
 	height: 30px 
@@ -45,37 +55,72 @@ button.go
 	height: 30px
 	width: 48px
 	font-weight: bold
-	background-color: $color3e
+	background-color: #3e3e3e
 	border: none 
 	border-radius: 10px
 	color: white
-.cover 
+.wrapper
+	padding: 0rem 15rem
+@media (max-width: 800px) 
+	.wrapper
+		padding: 0rem 5rem
+@media (max-width: 600px) 
+	.wrapper
+		padding: 0rem 0rem
+.cover
+	height: 30rem
+	background-color: $colcovergb
+	background-image: url("img/cover.png")
+	background-size: cover
+	background-position: center
 	display: flex
 	align-items: center
-	justify-content: center
-	height: 596px
-	background: #000f30
-	background-image: url(./img/cover.png)
-	background-position: center
-	background-size: cover
+	justify-content: flex-end
 .coverbox
-	margin-left: 322px
 	display: flex
 	flex-direction: column
-	align-items: baseline
+	align-items: center
+	justify-content: center
+	margin-right: 50px
 div.cb_top
 	color: white
 	padding: 10px 30px 10px 30px
 	background-color: rgba(28, 28, 28, 0.9)
-	font-size: 65px 
+	font-size: 3rem
 	font-family: $Combo
+	text-align: center
 div.cb_bottom
 	color: white
-	padding: 10px
+	padding: 10px 20px 10px 20px
 	background-color: rgba(0, 15, 48, 0.9)
-	font-size: 50px 
-	font-family: $Combo
-footer 
-	height: 184px
-	background: #2a2a2a
 
+	font-size: 2rem
+	font-family: $Combo
+	text-align: center
+
+.abcd 
+	display: flex
+.pargh
+p.wrapper
+	font-family: $Open
+	font-size: 22px
+	background-color: $colparghbg
+	border-radius: 20px
+	color: white
+	padding: 25px 25px 25px 305px
+@media (max-width: 1000px) 
+	p.wrapper
+		padding: 15px 15px 15px 105px
+@media (max-width: 800px) 
+	.wrapper
+		padding: 0px
+.icons
+	padding-top: 30px
+	padding-bottom: 30px
+img.icon
+	padding-right: 10px
+	height: 30px
+	width: 30px
+footer
+	height: 10rem
+	background-color: $colfooter 
